@@ -12,11 +12,17 @@ app = Flask(__name__)
 
 @app.route('/')
 def form_page():
- return render_template('submit_name.html') # Serve the page with the form
+ return render_template('login.html') # Serve the page with the form
+
+@app.route('/register')
+def register_page():
+ return render_template('register.html') # Serve the page with the form
+
 
 @app.route('/login-page')
 def login_page():
  return render_template('login.html') # Serve the login page
+ 
 @app.route('/login', methods=['POST'])
 def login():
     email = request.form.get('email')

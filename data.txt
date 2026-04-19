@@ -1,2 +1,3 @@
 Hello from the 'with' statement.
 This file will auto-close.
+this is a new line

@@ -1,0 +1,18 @@
+# 1. Base Image
+FROM python:3.9-slim
+
+# 2. Working Directory
+WORKDIR /app
+
+# 3. Dependencies
+COPY requirements_frontend.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# 4. Copy Application Code
+COPY frontend_service.py .
+
+# 5. Expose Port for the UI
+EXPOSE 5000
+
+# 6. Startup Command
+CMD ["python", "frontend_service.py"]

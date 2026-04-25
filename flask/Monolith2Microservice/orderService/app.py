@@ -7,8 +7,8 @@ app = Flask(__name__)
 orders = []
 
 # URLs to other microservices (using container names for DNS resolution!)
-USER_SERVICE_URL = "http://user-service:5001"
-PRODUCT_SERVICE_URL = "http://product-service:5002"
+USER_SERVICE_URL = "http://192.168.81.151:5001"
+PRODUCT_SERVICE_URL = "http://192.168.81.151:5002"
 
 @app.route('/orders', methods=['POST'])
 def create_order():

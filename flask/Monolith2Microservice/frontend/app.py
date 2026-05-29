@@ -8,9 +8,9 @@ app = Flask(__name__)
 # PRODUCT_SVC_URL = "http://product-service:5002"
 # ORDER_SVC_URL = "http://order-service:5003"
 
-USER_SVC_URL = "http://192.168.81.151:5001"
-PRODUCT_SVC_URL = "http://192.168.81.151:5002"
-ORDER_SVC_URL = "http://192.168.81.151:5003"
+USER_SVC_URL = "http://192.168.81.201:5001"
+PRODUCT_SVC_URL = "http://192.168.81.201:5002"
+ORDER_SVC_URL = "http://192.168.81.201:5003"
 
 
 

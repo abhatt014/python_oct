@@ -1,3 +1,3 @@
-a = 30
+a = 40
 res = a + 10  
 print(res)
